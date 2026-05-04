@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+    <color name="PrimaryColor">#F4A419</color>
+    <color name="cFFFFFF">#FFFFFFFF</color>
+    <color name="c000000">#FF000000</color>
+    <color name="c011510">#FF011510</color>
+    <color name="c011510">#FF011510</color>
+    <color name="cFF7A22">#FFFF7A22</color>
+    <color name="cD0D5DD">#FFD0D5DD</color>
+    <color name="c101828">#FF101828</color>
+    <color name="cF2F4F7">#FFF2F4F7</color>
+    <color name="c006850">#FF006850</color>
+    <color name="cF8F8F8">#FFF8F8F8</color>
+    <color name="cE4E4E4">#FFE4E4E4</color>
+    <color name="c3629B7">#FF3629B7</color>
+    <color name="c150D00">#FF150D00</color>
+    <color name="c080808">#FF080808</color>
+    <color name="c333B97">#FF333B97</color>
+    <color name="cE5E5E5">#E5E5E5</color>
+    <color name="cEFF6FF">#EFF6FF</color>
+    <color name="c131B2E">#131B2E</color>
+
+
+
+    //mekki 0xFF605B5F
+    <color name="onBoardingColor">#FF00E783</color>
+    <color name="subOn">#FF595959</color>
+    <color name="language">#FF02493D</color>
+    <color name="socialText">#FF6A7283</color>
+    <color name="socialBg">#FFF5F6F7</color>
+    <color name="appBarColor">#FF1E1D30</color>
+    <color name="accountType">#FF333333</color>
+    <color name="welcome">#FF061331</color>
+    <color name="salesBg">#FFEFB70E</color>
+    <color name="salesBg1">#FFFCF4DB</color>
+    <color name="categoriesBg">#FFF3F4F9</color>
+    <color name="categoriesBorder">#FFE5E5E5</color>
+    <color name="cartBg">#FFF3F3F3</color>
+    <color name="itemCount">#FF9900020A</color>
+    <color name="subTotal">#FF979797</color>
+    <color name="borderSide">#FFE5E5E5</color>
+
+    /// slenderblender
+    
+    <color name="c676767">#676767</color>
+    <color name="c37B18C">#37B18C</color>
+    <color name="c697581">#697581</color>
+    <color name="cEBF7F3">#EBF7F3</color>
+    <color name="cC1C4CC">#C1C4CC</color>
+    <color name="c154A3A">#154A3A</color>
+    <color name="c798090">#798090</color>
+    <color name="cDFE0E4">#DFE0E4</color>
+    <color name="cC0E7DB">#C0E7DB</color>
+    <color name="c6E6E6E">#6E6E6E</color>
+    <color name="c919EAB">#919EAB</color>
+    <color name="c637381">#637381</color>
+    <color name="cFFFBF1">#FFFBF1</color>
+    <color name="c888888">#888888</color>
+    <color name="c2EA17E">#2EA17E</color>
+    <color name="c7F8181">#7F8181</color>
+    <color name="cD9D9D9">#D9D9D9</color>
+    <color name="cD9D9D9">#D9D9D9</color>
+    <color name="c747474">#747474</color>
+    <color name="c1E55AF">#1E55AF</color>
+    <color name="cB2B2B2">#B2B2B2</color>
+    <color name="c154A3A">#154A3A</color>
+    <color name="cC4CDD5">#C4CDD5</color>
+    <color name="cEDE8DB">#EDE8DB</color>
+    <color name="cF6F0E1">#F6F0E1</color>
+    <color name="c7D7D7D">#7D7D7D</color>
+    <color name="cFFFBF0">#FFFBF0</color>
+    <color name="c33B18B">#33B18B</color>
+    <color name="cE3DBC8">#E3DBC8</color>
+    <color name="c867F6F">#867F6F</color>
+    <color name="cF6EFDF">#F6EFDF</color>
+    <color name="cC8C4BB">#C8C4BB</color>
+    <color name="cA1DBCA">#A1DBCA</color>
+    <color name="cAE3131">#AE3131</color>
+    <color name="cA7A398">#A7A398</color>
+    <color name="cB3AA92">#B3AA92</color>
+    <color name="cF3ECDD">#F3ECDD</color>
+    <color name="c707070">#707070</color>
+    <color name="cF2EBD8">#F2EBD8</color>
+    <color name="c333333">#333333</color>
+    <color name="c8F8770">#8F8770</color>
+    <color name="c6B7280">#6B7280</color>
+    <color name="cE5E7EB">#E5E7EB</color>
+    <color name="c1F2937">#1F2937</color>
+    <color name="c6A7283">#6A7283</color>
+    <color name="c5B5B5A">#5B5B5A</color>
+
+
+
+    ///////brucewayn
+    <color name="cFCE3B8">#FCE3B8</color>
+    <color name="cF4A419">#F4A419</color>
+    <color name="c212B36">#212B36</color>
+    <color name="cF9FAFB">#F9FAFB</color>
+    <color name="cF4F6F8">#F4F6F8</color>
+    <color name="cC9DBEE">#C9DBEE</color>
+    <color name="cF6B647">#F6B647</color>
+    <color name="c454F5B">#454F5B</color>
+
+  
+
+</colors>
