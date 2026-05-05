@@ -23,6 +23,9 @@ class $AssetsIconGen {
   /// File path: assets/icon/arrowForward.svg
   SvgGenImage get arrowForward => const SvgGenImage('assets/icon/arrowForward.svg');
 
+  /// File path: assets/icon/budgetIcon.svg
+  SvgGenImage get budgetIcon => const SvgGenImage('assets/icon/budgetIcon.svg');
+
   /// File path: assets/icon/calendar.svg
   SvgGenImage get calendar => const SvgGenImage('assets/icon/calendar.svg');
 
@@ -36,7 +39,7 @@ class $AssetsIconGen {
   SvgGenImage get trendsIcon => const SvgGenImage('assets/icon/trendsIcon.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [apple, arrowForward, calendar, dashboardIcon, googleIcon, trendsIcon];
+  List<SvgGenImage> get values => [apple, arrowForward, budgetIcon, calendar, dashboardIcon, googleIcon, trendsIcon];
 }
 
 class $AssetsImageGen {
@@ -60,6 +63,9 @@ class $AssetsImageGen {
   /// File path: assets/image/expenseSplash.png
   AssetGenImage get expenseSplash => const AssetGenImage('assets/image/expenseSplash.png');
 
+  /// File path: assets/image/expensesImg.png
+  AssetGenImage get expensesImg => const AssetGenImage('assets/image/expensesImg.png');
+
   /// File path: assets/image/onboarding1.png
   AssetGenImage get onboarding1 => const AssetGenImage('assets/image/onboarding1.png');
 
@@ -80,6 +86,7 @@ class $AssetsImageGen {
     expenseLogo,
     expenseLogoDuplicate,
     expenseSplash,
+    expensesImg,
     onboarding1,
     onboarding2,
     onboarding3,
