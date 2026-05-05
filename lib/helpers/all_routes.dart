@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
+import 'package:mexpense/navigation_screen.dart';
 
 import '../loading_screen.dart';
 
@@ -19,6 +20,7 @@ final class Routes {
   static const String updatePassword = '/updatePassword';
   static const String congratulations = '/congratulations';
   static const String signUpVerifyEmail = '/signUpVerifyEmail';
+  static const String navigation = '/navigation';
 }
 
 final class RouteGenerator {
@@ -33,15 +35,19 @@ final class RouteGenerator {
             ? _FadedTransitionRoute(widget: const Loading(), settings: settings)
             : CupertinoPageRoute(builder: (context) => const Loading());
 
-      // case Routes.onboardingScreen:
-      //   return Platform.isAndroid
-      //       ? _FadedTransitionRoute(
-      //           widget: const OnboardingScreen(
-
-      //           ),
-      //           settings: settings)
-      //       : CupertinoPageRoute(
-      //           builder: (context) => const OnboardingScreen());
+      case Routes.navigation:
+        Map args = settings.arguments as Map;
+        return Platform.isAndroid
+            ? _FadedTransitionRoute(
+                widget: ScreenTitle(
+                  widget: NavigationScreen(pageNum: args['pageNum']),
+                ),
+                settings: settings,
+              )
+            : CupertinoPageRoute(
+                builder: (context) =>
+                    NavigationScreen(pageNum: args['pageNum']),
+              );
 
       // case Routes.signUp:
       //   return Platform.isAndroid

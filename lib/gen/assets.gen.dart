@@ -26,11 +26,17 @@ class $AssetsIconGen {
   /// File path: assets/icon/calendar.svg
   SvgGenImage get calendar => const SvgGenImage('assets/icon/calendar.svg');
 
+  /// File path: assets/icon/dashboardIcon.svg
+  SvgGenImage get dashboardIcon => const SvgGenImage('assets/icon/dashboardIcon.svg');
+
   /// File path: assets/icon/googleIcon.svg
   SvgGenImage get googleIcon => const SvgGenImage('assets/icon/googleIcon.svg');
 
+  /// File path: assets/icon/trendsIcon.svg
+  SvgGenImage get trendsIcon => const SvgGenImage('assets/icon/trendsIcon.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [apple, arrowForward, calendar, googleIcon];
+  List<SvgGenImage> get values => [apple, arrowForward, calendar, dashboardIcon, googleIcon, trendsIcon];
 }
 
 class $AssetsImageGen {

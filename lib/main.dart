@@ -18,7 +18,6 @@ import 'helpers/language.dart';
 import 'helpers/navigation_service.dart';
 import 'helpers/register_provider.dart';
 import 'networks/dio/dio.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 Future<void> backgroundHandler(RemoteMessage message) async {}
 void main() async {
@@ -37,10 +36,9 @@ void main() async {
   }
 
   runApp(const MyApp());
-  // runApp( DevicePreview(
-  //   enabled: !kReleaseMode,
-  //   builder: (context) => const MyApp(),
-  // ),);
+  // runApp(
+  //   DevicePreview(enabled: !kReleaseMode, builder: (context) => const MyApp()),
+  // );
 }
 
 class MyApp extends StatelessWidget {

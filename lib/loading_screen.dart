@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:mexpense/constants/app_constants.dart';
+import 'package:mexpense/navigation_screen.dart';
 import 'package:mexpense/networks/dio/dio.dart';
 import 'package:mexpense/welcome_screen.dart';
 
@@ -42,7 +43,7 @@ class _LoadingState extends State<Loading> {
     if (_isLoading) {
       return const WelcomeScreen();
     } else {
-      return const WelcomeScreen();
+      return const NavigationScreen(pageNum: 0);
       // return appData.read(kKeyIsLoggedIn)
       //     ? const BottomNavigationScreen()
       //     : const OnboardingScreen1();
