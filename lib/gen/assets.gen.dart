@@ -78,6 +78,9 @@ class $AssetsImageGen {
   /// File path: assets/image/proPicImg.png
   AssetGenImage get proPicImg => const AssetGenImage('assets/image/proPicImg.png');
 
+  /// File path: assets/image/trendsDataImg.png
+  AssetGenImage get trendsDataImg => const AssetGenImage('assets/image/trendsDataImg.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
     bruceLogo,
@@ -91,6 +94,7 @@ class $AssetsImageGen {
     onboarding2,
     onboarding3,
     proPicImg,
+    trendsDataImg,
   ];
 }
 
