@@ -17,8 +17,8 @@ class CustomButton extends StatelessWidget {
     super.key,
     required this.onTap,
     required this.text,
-    this.borderColor = AppColors.primaryColor,
-    this.textColor = AppColors.c000000,
+    this.borderColor,
+    this.textColor,
     this.borderRadius,
   });
 
@@ -28,23 +28,17 @@ class CustomButton extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color(0xFFF4A419),
-              Color(0xFFDE9517),
-            ],
-          ),
-          border: Border.all(color: borderColor!),
+          color: AppColors.c000000,
+          border: Border.all(color: borderColor ?? AppColors.c000000),
           borderRadius: BorderRadius.circular(borderRadius ?? 100.r),
         ),
         padding: EdgeInsets.symmetric(vertical: 16.h),
         child: Center(
           child: Text(
             text.tr,
-            style: TextFontStyle.headlineStyleInter16500
-                .copyWith(color: textColor),
+            style: TextFontStyle.headlineStyleInter16500.copyWith(
+              color: textColor ?? AppColors.cFFFFFF,
+            ),
           ),
         ),
       ),

@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:mexpense/features/calculationItems/presentation/add_expense_screen.dart';
+import 'package:mexpense/features/calculationItems/presentation/budget_screen.dart';
 import 'package:mexpense/navigation_screen.dart';
 
 import '../loading_screen.dart';
@@ -23,6 +24,7 @@ final class Routes {
   static const String signUpVerifyEmail = '/signUpVerifyEmail';
   static const String navigation = '/navigation';
   static const String addExpense = '/addExpense';
+  static const String budget = '/budget';
 }
 
 final class RouteGenerator {
@@ -61,13 +63,13 @@ final class RouteGenerator {
                 builder: (context) => const AddExpenseScreen(),
               );
 
-      // case Routes.login:
-      //   return Platform.isAndroid
-      //       ? _FadedTransitionRoute(
-      //           widget: const LoginScreen(),
-      //           settings: settings)
-      //       : CupertinoPageRoute(
-      //           builder: (context) => const LoginScreen());
+      case Routes.budget:
+        return Platform.isAndroid
+            ? _FadedTransitionRoute(
+                widget: const BudgetScreen(),
+                settings: settings,
+              )
+            : CupertinoPageRoute(builder: (context) => const BudgetScreen());
 
       // case Routes.forgotPass:
       //   return Platform.isAndroid

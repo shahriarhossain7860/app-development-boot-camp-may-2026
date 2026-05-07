@@ -7,6 +7,8 @@ import 'package:mexpense/features/expenseItems/widgets/dashboard_no_data.dart';
 import 'package:mexpense/features/expenseItems/widgets/total_budget_widget.dart';
 import 'package:mexpense/gen/assets.gen.dart';
 import 'package:mexpense/gen/colors.gen.dart';
+import 'package:mexpense/helpers/all_routes.dart';
+import 'package:mexpense/helpers/navigation_service.dart';
 import 'package:mexpense/helpers/ui_helpers.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -39,7 +41,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SvgPicture.asset(Assets.icon.budgetIcon.path),
+                  GestureDetector(
+                    onTap: () {
+                      NavigationService.navigateTo(Routes.budget);
+                    },
+                    child: SvgPicture.asset(Assets.icon.budgetIcon.path),
+                  ),
                 ],
               ),
               UIHelper.verticalSpace(16.h),

@@ -20,6 +20,9 @@ class $AssetsIconGen {
   /// File path: assets/icon/apple.svg
   SvgGenImage get apple => const SvgGenImage('assets/icon/apple.svg');
 
+  /// File path: assets/icon/arrow.svg
+  SvgGenImage get arrow => const SvgGenImage('assets/icon/arrow.svg');
+
   /// File path: assets/icon/arrowForward.svg
   SvgGenImage get arrowForward => const SvgGenImage('assets/icon/arrowForward.svg');
 
@@ -68,6 +71,7 @@ class $AssetsIconGen {
   /// List of all assets
   List<SvgGenImage> get values => [
     apple,
+    arrow,
     arrowForward,
     budgetIcon,
     calendar,
