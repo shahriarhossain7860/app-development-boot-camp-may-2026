@@ -18,7 +18,6 @@ class _TrendsScreenState extends State<TrendsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.cF8F9FF,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.w),
         child: Column(

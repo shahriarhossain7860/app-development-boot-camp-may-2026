@@ -5,7 +5,9 @@ import 'package:flutter_svg/svg.dart';
 import 'package:mexpense/features/expenseItems/presentation/dashboard_screen.dart';
 import 'package:mexpense/features/expenseItems/presentation/trends_screen.dart';
 import 'package:mexpense/gen/colors.gen.dart';
+import 'package:mexpense/helpers/all_routes.dart';
 import 'package:mexpense/helpers/helper_methods.dart';
+import 'package:mexpense/helpers/navigation_service.dart';
 
 import '../../../gen/assets.gen.dart';
 
@@ -40,7 +42,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
         body: _pageList[index],
         floatingActionButton: _FabButton(
           onTap: () {
-            // Handle add button tap
+            NavigationService.navigateTo(Routes.addExpense);
           },
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

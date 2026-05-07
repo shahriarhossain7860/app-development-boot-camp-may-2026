@@ -29,17 +29,61 @@ class $AssetsIconGen {
   /// File path: assets/icon/calendar.svg
   SvgGenImage get calendar => const SvgGenImage('assets/icon/calendar.svg');
 
+  /// File path: assets/icon/crossIcon.svg
+  SvgGenImage get crossIcon => const SvgGenImage('assets/icon/crossIcon.svg');
+
   /// File path: assets/icon/dashboardIcon.svg
   SvgGenImage get dashboardIcon => const SvgGenImage('assets/icon/dashboardIcon.svg');
 
+  /// File path: assets/icon/dollarIcon.svg
+  SvgGenImage get dollarIcon => const SvgGenImage('assets/icon/dollarIcon.svg');
+
+  /// File path: assets/icon/foodIcon.svg
+  SvgGenImage get foodIcon => const SvgGenImage('assets/icon/foodIcon.svg');
+
   /// File path: assets/icon/googleIcon.svg
   SvgGenImage get googleIcon => const SvgGenImage('assets/icon/googleIcon.svg');
+
+  /// File path: assets/icon/noteIcon.svg
+  SvgGenImage get noteIcon => const SvgGenImage('assets/icon/noteIcon.svg');
+
+  /// File path: assets/icon/otherIcon.svg
+  SvgGenImage get otherIcon => const SvgGenImage('assets/icon/otherIcon.svg');
+
+  /// File path: assets/icon/playIcon.svg
+  SvgGenImage get playIcon => const SvgGenImage('assets/icon/playIcon.svg');
+
+  /// File path: assets/icon/rightIcon.svg
+  SvgGenImage get rightIcon => const SvgGenImage('assets/icon/rightIcon.svg');
+
+  /// File path: assets/icon/shopIcon.svg
+  SvgGenImage get shopIcon => const SvgGenImage('assets/icon/shopIcon.svg');
+
+  /// File path: assets/icon/travelIcon.svg
+  SvgGenImage get travelIcon => const SvgGenImage('assets/icon/travelIcon.svg');
 
   /// File path: assets/icon/trendsIcon.svg
   SvgGenImage get trendsIcon => const SvgGenImage('assets/icon/trendsIcon.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [apple, arrowForward, budgetIcon, calendar, dashboardIcon, googleIcon, trendsIcon];
+  List<SvgGenImage> get values => [
+    apple,
+    arrowForward,
+    budgetIcon,
+    calendar,
+    crossIcon,
+    dashboardIcon,
+    dollarIcon,
+    foodIcon,
+    googleIcon,
+    noteIcon,
+    otherIcon,
+    playIcon,
+    rightIcon,
+    shopIcon,
+    travelIcon,
+    trendsIcon,
+  ];
 }
 
 class $AssetsImageGen {
