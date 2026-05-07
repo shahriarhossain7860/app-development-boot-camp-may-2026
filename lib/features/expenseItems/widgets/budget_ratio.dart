@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mexpense/common_widget/custom_linear_progress.dart';
@@ -26,12 +28,12 @@ class BudgetRatio extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.white.withOpacity(0.7),
-            offset: Offset(-2, -2),
+            offset: const Offset(-2, -2),
             blurRadius: 6,
           ),
           BoxShadow(
             color: Colors.black.withOpacity(0.06),
-            offset: Offset(4, 4),
+            offset: const Offset(4, 4),
             blurRadius: 12,
           ),
         ],

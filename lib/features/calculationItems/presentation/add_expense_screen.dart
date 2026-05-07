@@ -1,15 +1,16 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mexpense/constants/text_font_style.dart';
 import 'package:mexpense/features/calculationItems/widgets/category_item.dart';
 import 'package:mexpense/features/calculationItems/widgets/note_field.dart';
+import 'package:mexpense/features/expenseItems/model/expense_model.dart';
 import 'package:mexpense/gen/assets.gen.dart';
 import 'package:mexpense/gen/colors.gen.dart';
 import 'package:mexpense/helpers/navigation_service.dart';
 import 'package:mexpense/helpers/ui_helpers.dart';
+import 'package:mexpense/provider/expense_provider.dart';
+import 'package:provider/provider.dart';
 
 class AddExpenseScreen extends StatefulWidget {
   const AddExpenseScreen({super.key});
@@ -22,6 +23,45 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
   final expenseController = TextEditingController();
   final noteController = TextEditingController();
   int index = 0;
+
+  String _getCategoryLabel(int idx) {
+    switch (idx) {
+      case 1:
+        return 'Food & Drinks';
+      case 2:
+        return 'Shopping';
+      case 3:
+        return 'Transportation';
+      case 4:
+        return 'Entertainment';
+      case 5:
+        return 'Other';
+      default:
+        return 'Other';
+    }
+  }
+
+  void _saveExpense() {
+    final amountText = expenseController.text.trim();
+    if (amountText.isEmpty) return;
+    final amount = double.tryParse(amountText);
+    if (amount == null || amount <= 0) return;
+    if (index == 0) return;
+
+    final expense = ExpenseModel(
+      title: noteController.text.trim(),
+      category: _getCategoryLabel(index),
+      amount: amount,
+      dateTime: DateTime.now(),
+      note: noteController.text.trim().isEmpty
+          ? null
+          : noteController.text.trim(),
+    );
+
+    context.read<ExpenseProvider>().addExpense(expense);
+    NavigationService.goBack;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +87,10 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SvgPicture.asset(Assets.icon.rightIcon.path),
+                  GestureDetector(
+                    onTap: _saveExpense,
+                    child: SvgPicture.asset(Assets.icon.rightIcon.path),
+                  ),
                 ],
               ),
               UIHelper.verticalSpace(32.h),
@@ -102,11 +145,7 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                     textColor: index == 1
                         ? AppColors.c0B1C30
                         : AppColors.c45464D,
-                    onTap: () {
-                      setState(() {
-                        index = 1;
-                      });
-                    },
+                    onTap: () => setState(() => index = 1),
                   ),
                   CategoryItem(
                     name: 'Shop',
@@ -118,11 +157,7 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                     textColor: index == 2
                         ? AppColors.c0B1C30
                         : AppColors.c45464D,
-                    onTap: () {
-                      setState(() {
-                        index = 2;
-                      });
-                    },
+                    onTap: () => setState(() => index = 2),
                   ),
                   CategoryItem(
                     name: 'Travel',
@@ -134,11 +169,7 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                     textColor: index == 3
                         ? AppColors.c0B1C30
                         : AppColors.c45464D,
-                    onTap: () {
-                      setState(() {
-                        index = 3;
-                      });
-                    },
+                    onTap: () => setState(() => index = 3),
                   ),
                   CategoryItem(
                     name: 'Play',
@@ -150,11 +181,7 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                     textColor: index == 4
                         ? AppColors.c0B1C30
                         : AppColors.c45464D,
-                    onTap: () {
-                      setState(() {
-                        index = 4;
-                      });
-                    },
+                    onTap: () => setState(() => index = 4),
                   ),
                   CategoryItem(
                     name: 'Other',
@@ -166,11 +193,7 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                     textColor: index == 5
                         ? AppColors.c0B1C30
                         : AppColors.c45464D,
-                    onTap: () {
-                      setState(() {
-                        index = 5;
-                      });
-                    },
+                    onTap: () => setState(() => index = 5),
                   ),
                 ],
               ),
